@@ -2,6 +2,38 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Portfolio ready");
   
+  // Theme Toggle Functionality
+  const themeToggle = document.getElementById('themeToggle');
+  const body = document.body;
+  
+  // Get saved theme from localStorage or default to light
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  
+  // Apply saved theme on page load
+  body.setAttribute('data-theme', savedTheme);
+  
+  // Theme toggle event listener
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = body.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    
+    // Update theme
+    body.setAttribute('data-theme', newTheme);
+    
+    // Save to localStorage
+    localStorage.setItem('theme', newTheme);
+    
+    // Add smooth transition effect
+    body.style.transition = 'background-color 0.3s ease, color 0.3s ease';
+    
+    // Remove transition after animation completes
+    setTimeout(() => {
+      body.style.transition = '';
+    }, 300);
+    
+    console.log(`Theme switched to: ${newTheme}`);
+  });
+  
   // Smooth scrolling for navigation links
   const navLinks = document.querySelectorAll('nav a[href^="#"]');
   navLinks.forEach(link => {
