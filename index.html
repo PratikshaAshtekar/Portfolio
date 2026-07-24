@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pratiksha Ashtekar | AI/ML Engineer</title>
+
+    <meta name="description"
+        content="Portfolio of Pratiksha Ashtekar - AI/ML Engineer, Python Developer and Java Full Stack Developer.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Immersive AI background -->
+    <div class="bg-scene" aria-hidden="true">
+        <div class="bg-grid"></div>
+        <div class="bg-blob bg-blob--1"></div>
+        <div class="bg-blob bg-blob--2"></div>
+        <div class="bg-blob bg-blob--3"></div>
+        <div class="bg-glow" id="mouseGlow"></div>
+        <canvas id="networkCanvas"></canvas>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="site-header">
+        <div class="nav-shell">
+            <a href="#home" class="logo">Pratiksha</a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="siteNav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+           
+            <a href="https://drive.google.com/file/d/1R8Wp00Jrrvo9lfqaCNpNnOlwnAnqDGG5/view?usp=sharingLbzELrTPLDR7/view?usp=drive_link"
+                target="_blank" rel="noopener noreferrer" class="primary-btn nav-resume">
+                Resume
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ================= HOME / ABOUT ================= -->
+        <section id="home" class="about">
+            <div class="container">
+                <div class="about-grid">
+
+                    <div class="about-image reveal">
+                        <div class="profile-frame">
+                            <img src="assets/profile.jpeg" alt="Pratiksha Ashtekar" class="float-img">
+                        </div>
+                    </div>
+
+                    <div class="about-content reveal reveal-delay-1">
+                        <h1>Hello, I'm Pratiksha 👋</h1>
+
+                        <p>
+                            I'm an AI/ML Engineer and Java Full Stack Developer passionate
+                            about building intelligent software, scalable backend systems,
+                            and AI-powered applications using Python, Java, Spring Boot and Machine Learning.
+                        </p>
+
+                        <div class="info-grid">
+                            <div class="info-card reveal reveal-delay-1">
+                                <h4>🎓 Degree</h4>
+                                <p>B.E Artificial Intelligence &amp; Machine Learning</p>
+                            </div>
+
+                            <div class="info-card reveal reveal-delay-2">
+                                <h4>⭐ CGPA</h4>
+                                <p>8.70</p>
+                            </div>
+
+                            <div class="info-card reveal reveal-delay-3">
+                                <h4>💼 Experience</h4>
+                                <p>2 Internships</p>
+                            </div>
+
+                            <div class="info-card reveal reveal-delay-4">
+                                <h4>📍 Location</h4>
+                                <p>Pune, Maharashtra</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EXPERIENCE ================= -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Experience</h2>
+                    <p>My professional journey and internship experience.</p>
+                </div>
+
+                <div class="xp-highlights reveal" aria-label="Career highlights">
+                    <div class="xp-highlight xp-highlight--blue">
+                        <span class="xp-highlight-icon" aria-hidden="true">✓</span>
+                        <span>REST APIs Built</span>
+                    </div>
+                    <div class="xp-highlight xp-highlight--purple">
+                        <span class="xp-highlight-icon" aria-hidden="true">✓</span>
+                        <span>Spring Boot</span>
+                    </div>
+                    <div class="xp-highlight xp-highlight--cyan">
+                        <span class="xp-highlight-icon" aria-hidden="true">✓</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="xp-highlight xp-highlight--indigo">
+                        <span class="xp-highlight-icon" aria-hidden="true">✓</span>
+                        <span>Backend Development</span>
+                    </div>
+                    <div class="xp-highlight xp-highlight--violet">
+                        <span class="xp-highlight-icon" aria-hidden="true">✓</span>
+                        <span>Team Collaboration</span>
+                    </div>
+                </div>
+
+                <div class="xp-timeline" id="xpTimeline">
+                    <div class="xp-timeline-track" aria-hidden="true">
+                        <div class="xp-timeline-progress" id="xpProgress"></div>
+                    </div>
+
+                    <article class="xp-item reveal" data-xp-item>
+                        <div class="xp-node" aria-hidden="true">
+                            <span class="xp-node-pulse"></span>
+                            <span class="xp-node-core"></span>
+                        </div>
+
+                        <div class="xp-card" data-tilt>
+                            <div class="xp-card-top">
+                                <div class="xp-logo" aria-hidden="true">
+                                    <span>S</span>
+                                </div>
+                                <div class="xp-meta">
+                                    <h3>Java Full Stack Developer Intern</h3>
+                                    <p class="xp-company">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                            <path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-6h6v6" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        Syscryption Pvt. Ltd.
+                                    </p>
+                                </div>
+                                <div class="xp-date">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                        <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                        <path d="M3 10h18M8 3v4M16 3v4" stroke-linecap="round"/>
+                                    </svg>
+                                    Jun 2025 – Feb 2026
+                                </div>
+                            </div>
+
+                            <p class="xp-summary">
+                                Built intelligent enterprise applications by combining Java Spring Boot backend development with AI/ML integration, RESTful API design, database optimization, and secure, scalable system architecture.
+                            </p>
+
+                            <div class="xp-achievements">
+                                <div class="xp-achievement">
+                                    <span class="xp-achievement-icon" aria-hidden="true">✓</span>
+                                    <span>Developed REST APIs using Spring Boot</span>
+                                </div>
+                                <div class="xp-achievement">
+                                    <span class="xp-achievement-icon" aria-hidden="true">✓</span>
+                                    <span>Integrated MySQL databases</span>
+                                </div>
+                                <div class="xp-achievement">
+                                    <span class="xp-achievement-icon" aria-hidden="true">✓</span>
+                                    <span>Built scalable backend modules</span>
+                                </div>
+                                <div class="xp-achievement">
+                                    <span class="xp-achievement-icon" aria-hidden="true">✓</span>
+                                    <span>Collaborated on enterprise web applications</span>
+                                </div>
+                            </div>
+
+                            <div class="tech-list">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>MySQL</span>
+                                <span>Machine Learning</span>
+                                <span>git</span>
+                                <span>REST API</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="xp-item reveal reveal-delay-2" data-xp-item>
+                        <div class="xp-node" aria-hidden="true">
+                            <span class="xp-node-pulse"></span>
+                            <span class="xp-node-core"></span>
+                        </div>
+
+                        <div class="xp-card" data-tilt>
+                            <div class="xp-card-top">
+                                <div class="xp-logo xp-logo--alt" aria-hidden="true">
+                                    <span>A</span>
+                                </div>
+                                <div class="xp-meta">
+                                    <h3>Deployment Support Intern</h3>
+                                    <p class="xp-company">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                            <path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-6h6v6" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        Arffy Technologies
+                                    </p>
+                                </div>
+                                <div class="xp-date">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                                        <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                        <path d="M3 10h18M8 3v4M16 3v4" stroke-linecap="round"/>
+                                    </svg>
+                                    Jan 2025 – Feb 2025
+                                </div>
+                            </div>
+
+                            <p class="xp-summary">
+                                Built secure REST APIs, optimized MySQL databases, and collaborated on enterprise web applications while supporting AI/ML feature integration and scalable backend development.
+                            </p>
+
+                            <div class="xp-achievements">
+                                <div class="xp-achievement">
+                                    <span class="xp-achievement-icon" aria-hidden="true">✓</span>
+                                    <span>Built Java web applications</span>
+                                </div>
+                                <div class="xp-achievement">
+                                    <span class="xp-achievement-icon" aria-hidden="true">✓</span>
+                                    <span>Worked with Spring Boot &amp; Maven</span>
+                                </div>
+                                <div class="xp-achievement">
+                                    <span class="xp-achievement-icon" aria-hidden="true">✓</span>
+                                    <span>Improved backend architecture</span>
+                                </div>
+                            </div>
+
+                            <div class="tech-list">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>MySQL</span>
+                                <span>Machine Learning</span>
+                                <span>git</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SKILLS ================= -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Technical Skills</h2>
+                    <p>Technologies I use to build intelligent and scalable applications.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card reveal">
+                        <div class="skill-icon" aria-hidden="true">💻</div>
+                        <h3>Programming</h3>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>Java</span>
+                            <span>SQL</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal reveal-delay-1">
+                        <div class="skill-icon" aria-hidden="true">🤖</div>
+                        <h3>Artificial Intelligence</h3>
+                        <div class="skill-tags">
+                            <span>Machine Learning</span>
+                            <span>Deep Learning</span>
+                            <span>NLP</span>
+                            <span>Generative AI</span>
+                            <span>Scikit-learn</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal reveal-delay-2">
+                        <div class="skill-icon" aria-hidden="true">⚙️</div>
+                        <h3>Backend</h3>
+                        <div class="skill-tags">
+                            <span>Spring Boot</span>
+                            <span>REST API</span>
+                            <span>Hibernate</span>
+                            <span>MySQL</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal reveal-delay-3">
+                        <div class="skill-icon" aria-hidden="true">🎨</div>
+                        <h3>Frontend</h3>
+                        <div class="skill-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>React</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal reveal-delay-4">
+                        <div class="skill-icon" aria-hidden="true">🛠️</div>
+                        <h3>Tools</h3>
+                        <div class="skill-tags">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>Docker</span>
+                            <span>Linux</span>
+                            <span>Maven</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal reveal-delay-5">
+                        <div class="skill-icon" aria-hidden="true">📚</div>
+                        <h3>Core Concepts</h3>
+                        <div class="skill-tags">
+                            <span>OOP</span>
+                            <span>DBMS</span>
+                            <span>Operating Systems</span>
+                            <span>Data Structures</span>
+                            <span>Computer Networks</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PROJECTS ================= -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Featured Projects</h2>
+                    <p>
+                        Explore my work across Artificial Intelligence, Machine Learning, and Java Full Stack Development.
+                    </p>
+                </div>
+
+                <!-- AI & Machine Learning -->
+                <div class="project-group reveal">
+                    <div class="project-group-heading">
+                        <span class="project-group-icon" aria-hidden="true">🤖</span>
+                        <div class="project-group-copy">
+                            <h3>AI &amp; Machine Learning Projects</h3>
+                            <p>Intelligent systems built with machine learning, NLP, and data-driven models.</p>
+                        </div>
+                    </div>
+
+                    <div class="projects-grid">
+                        <article class="project-card project-card--featured">
+                            <div class="project-media">
+                                <img src="assets/Fraud.jpeg"
+                                     alt="Online Recruitment Fraud Detection System"
+                                     class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-card-top">
+                                    <span class="project-category">AI &amp; Machine Learning</span>
+                                    <span class="project-featured-tag">Featured</span>
+                                </div>
+                                <h3>Online Recruitment Fraud Detection System</h3>
+                                <p>
+                                    Developed a Machine Learning model to classify fake and genuine job postings using feature engineering, NLP and predictive analytics.
+                                </p>
+                                <div class="project-tags">
+                                    <span>Python</span>
+                                    <span>Scikit-Learn</span>
+                                    <span>Pandas</span>
+                                    <span>NumPy</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/PratikshaAshtekar/Online-Recruitment-Fraud-Detection.git"
+                                        target="_blank" rel="noopener noreferrer" class="project-btn">GitHub</a>
+                                    <a class="project-btn project-btn--demo" hidden>Live Demo</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-media">
+                                <img src="assets/images/projects/smart-resume-analyzer.jpeg"
+                                     alt="Smart Resume Analyzer"
+                                     class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-card-top">
+                                    <span class="project-category">AI &amp; Machine Learning</span>
+                                </div>
+                                <h3>Smart Resume Analyzer</h3>
+                                <p>
+                                    AI-powered resume analyzer that evaluates resumes using NLP techniques to surface strengths, gaps, and optimization insights for job applications.
+                                </p>
+                                <div class="project-tags">
+                                    <span>Python</span>
+                                    <span>NLP</span>
+                                    <span>Machine Learning</span>
+                                    <span>Scikit-Learn</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/PratikshaAshtekar/Smart-Resume-Analyzer"
+                                        target="_blank" rel="noopener noreferrer" class="project-btn">GitHub</a>
+                                    <a class="project-btn project-btn--demo" hidden>Live Demo</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-media">
+                                <img src="assets/images/projects/codeconnect.jpeg"
+                                     alt="CodeConnect"
+                                     class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-card-top">
+                                    <span class="project-category">AI &amp; Machine Learning</span>
+                                </div>
+                                <h3>CodeConnect</h3>
+                                <p>
+                                    A developer collaboration platform where programmers create profiles, showcase skills, discover other developers, and send collaboration requests.
+                                </p>
+                                <div class="project-tags">
+                                    <span>Python</span>
+                                    <span>Flask</span>
+                                    <span>SQLAlchemy</span>
+                                    <span>SQLite</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/PratikshaAshtekar/CodeConnect"
+                                        target="_blank" rel="noopener noreferrer" class="project-btn">GitHub</a>
+                                    <a class="project-btn project-btn--demo" hidden>Live Demo</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Java Full Stack -->
+                <div class="project-group reveal reveal-delay-2">
+                    <div class="project-group-heading">
+                        <span class="project-group-icon" aria-hidden="true">☕</span>
+                        <div class="project-group-copy">
+                            <h3>Java Full Stack Projects</h3>
+                            <p>Scalable applications built with Java, Spring Boot, secure APIs, and modern frontends.</p>
+                        </div>
+                    </div>
+
+                    <div class="projects-grid">
+                        <article class="project-card project-card--featured">
+                            <div class="project-media">
+                                <img src="assets/skillswap.jpeg"
+                                     alt="SkillSwap"
+                                     class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-card-top">
+                                    <span class="project-category">Java Full Stack</span>
+                                    <span class="project-featured-tag">Featured</span>
+                                </div>
+                                <h3>SkillSwap</h3>
+                                <p>
+                                    A full-stack platform where users exchange skills with authentication, dashboards, blogs and secure backend APIs.
+                                </p>
+                                <div class="project-tags">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>MySQL</span>
+                                    <span>JWT</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/PratikshaAshtekar/Skillswap-Web-App.git"
+                                        target="_blank" rel="noopener noreferrer" class="project-btn">GitHub</a>
+                                    <a class="project-btn project-btn--demo" hidden>Live Demo</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-media">
+                                <img src="assets/images/projects/authsecure.jpeg"
+                                     alt="AuthSecure"
+                                     class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-card-top">
+                                    <span class="project-category">Java Full Stack</span>
+                                </div>
+                                <h3>AuthSecure</h3>
+                                <p>
+                                    Secure role-based application with JWT authentication, BCrypt encryption, and enterprise-grade access control across Super Admin, Admin, and User roles.
+                                </p>
+                                <div class="project-tags">
+                                    <span>Java</span>
+                                    <span>Spring Boot</span>
+                                    <span>Spring Security</span>
+                                    <span>JWT</span>
+                                    <span>MySQL</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/PratikshaAshtekar/Payment-gateway-role-based-app"
+                                        target="_blank" rel="noopener noreferrer" class="project-btn">GitHub</a>
+                                    <a class="project-btn project-btn--demo" hidden>Live Demo</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <div class="project-media">
+                                <img src="assets/weather.jpeg"
+                                     alt="Weather Prediction Dashboard"
+                                     class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-card-top">
+                                    <span class="project-category">Java Full Stack</span>
+                                </div>
+                                <h3>Weather Prediction Dashboard</h3>
+                                <p>
+                                    Interactive weather dashboard providing real-time forecasts, weather analytics and beautiful visualizations, with timeline support.
+                                </p>
+                                <div class="project-tags">
+                                    <span>React</span>
+                                    <span>Spring Boot</span>
+                                    <span>MySQL</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="https://github.com/PratikshaAshtekar/Weather-Dashboard"
+                                        target="_blank" rel="noopener noreferrer" class="project-btn">GitHub</a>
+                                    <a class="project-btn project-btn--demo" hidden>Live Demo</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= EDUCATION ================= -->
+        <section id="education" class="education">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Education</h2>
+                    <p>My academic journey.</p>
+                </div>
+
+                <div class="education-grid">
+                    <article class="education-card reveal">
+                        <h3>B.E. Artificial Intelligence &amp; Machine Learning</h3>
+                        <h4>Loknete Gopinathji Munde Institute of Engineering &amp; Research</h4>
+                        <p>CGPA : <strong>8.70</strong></p>
+                        <span>2023- 2026</span>
+                    </article>
+
+                    <article class="education-card reveal reveal-delay-2">
+                        <h3>Diploma in Computer Technology</h3>
+                        <h4>Padmashri Dr. Vitthalrao Vikhe Patil Institute of Technology</h4>
+                        <p>Percentage : <strong>79.80%</strong></p>
+                        <span>2020 - 2023</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CERTIFICATIONS ================= -->
+        <section id="certifications" class="certifications">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Certifications</h2>
+                </div>
+
+                <div class="certificate-grid">
+                    <article class="certificate-card reveal">
+                        <div class="cert-emoji" aria-hidden="true">🏆</div>
+                        <h3>Java Full Stack Developer</h3>
+                        <p>Tech Concept Hub</p>
+                    </article>
+
+                    <article class="certificate-card reveal reveal-delay-2">
+                        <div class="cert-emoji" aria-hidden="true">🤖</div>
+                        <h3>Machine Learning</h3>
+                        <p>Professional Certification</p>
+                    </article>
+
+                    <article class="certificate-card reveal reveal-delay-3">
+                        <div class="cert-emoji" aria-hidden="true">🐍</div>
+                        <h3>Python Programming</h3>
+                        <p>Professional Certification</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= RESUME ================= -->
+        <section id="resume" class="resume">
+            <div class="container">
+                <div class="resume-box reveal">
+                    <h2>Resume</h2>
+                    <p>
+                        Download my latest AI/ML &amp; Java Full Stack Resume.
+                    </p>
+                    <a href="https://drive.google.com/file/d/1R8Wp00Jrrvo9lfqaCNpNnOlwnAnqDGG5/view?usp=sharing"
+                        target="_blank" rel="noopener noreferrer" class="primary-btn">
+                        Download Resume
+                    </a>        
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Let's Connect</h2>
+                    <p>
+                        Have a project, internship opportunity, or just want to say hello?
+                        Feel free to send me a message.
+                    </p>
+                </div>
+
+                <div class="contact-wrapper">
+                    <form class="contact-form reveal" id="contactForm">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="input-group">
+                            <textarea name="message" placeholder="Write your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="primary-btn ripple-btn">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content reveal">
+            <h3>Pratiksha Ashtekar</h3>
+            <p>AI/ML Engineer • Python Developer • Java Full Stack Developer</p>
+
+            <div class="footer-links">
+                <a href="https://github.com/pratikshaashtekar" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/pratiksha-ashtekar-28104b231/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:pratikshaashtekar5@gmail.com">Email</a>
+            </div>
+
+            <p class="copyright">© 2026 Pratiksha Ashtekar</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
